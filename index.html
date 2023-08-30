@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl">Phone Hunter</h1>
+    </header>
+    <main>
+        <section class="mt-10">
+            <div class="bg-green-600 w-80 mx-auto rounded-lg py-4  text-center mb-10">
+                <input id="inp" class="rounded-2xl px-2 py-2" type="search" name="" id="" placeholder="Search">
+                <button onclick="btnHandle()" class="btn btn-outline btn-primary">Primary</button>
+            </div>
+            <!-- modal -->
+            <div>
+                <!-- Open the modal using ID.showModal() method -->
+               
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                       <div id="mod">
+                        
+                       </div>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+            <div class="text-center ">
+                <span id="lo" class="loading loading-spinner loading-lg hidden"></span>
+            </div>
+            <!-- search result -->
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="phone.js"></script>
+</body>
+
+</html>
